@@ -34,3 +34,9 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Ignore the data folder
+data/
+
+# Ignore mac source files
+.DS_Store
