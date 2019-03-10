@@ -1,6 +1,7 @@
 library(sf)
 library(rio)
 library(dplyr)
+library(purrr)
 library(furrr)
 library(reshape2)
 
@@ -45,7 +46,7 @@ get_n_value <- function(r, pnt){
       summarise(
         pct_black = sum(black) / n(),
         pct_wfrn = sum(white_frnbrn) / n(),
-        mean_sei = mean(seius, na.rm = T),
+        mean_sei = ifelse(is.nan(mean(seius, na.rm = T)), NA, mean(seius, na.rm = T)),
         r = r
       )
   } else {

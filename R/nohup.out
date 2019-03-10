@@ -1,0 +1,52 @@
+here() starts at /home/bbellman/cluster-neighborhoods
+Loading required package: methods
+Linking to GEOS 3.4.2, GDAL 2.2.3, PROJ 4.8.0
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘foreach’
+
+The following objects are masked from ‘package:purrr’:
+
+    accumulate, when
+
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: future
+Reading layer `Philadelphia_OffStreet_BenResult' from data source `/home/bbellman/cluster-neighborhoods/data/1880/Off Street/Philadelphia_OffStreet_BenResult.shp' using driver `ESRI Shapefile'
+Simple feature collection with 165759 features and 18 fields
+geometry type:  POINT
+dimension:      XY
+bbox:           xmin: -1.797693e+308 ymin: -1.797693e+308 xmax: -74.96317 ymax: 40.13241
+epsg (SRID):    4269
+proj4string:    +proj=longlat +datum=NAD83 +no_defs
+Warning messages:
+1: `as_dictionary()` is soft-deprecated as of rlang 0.3.0.
+Please use `as_data_pronoun()` instead
+This warning is displayed once per session. 
+2: `new_overscope()` is soft-deprecated as of rlang 0.2.0.
+Please use `new_data_mask()` instead
+This warning is displayed once per session. 
+3: The `parent` argument of `new_data_mask()` is deprecated.
+The parent of the data mask is determined from either:
+
+  * The `env` argument of `eval_tidy()`
+  * Quosure environments when applicable
+This warning is displayed once per session. 
+4: `overscope_clean()` is soft-deprecated as of rlang 0.2.0.
+This warning is displayed once per session. 
+Read 0.0% of 847767 rowsRead 27.1% of 847767 rowsRead 53.1% of 847767 rowsRead 80.2% of 847767 rowsRead 88.5% of 847767 rowsRead 847569 rows and 117 (of 117) columns from 0.377 GB file in 00:00:08
+error calling combine function:
+<simpleError in rbind(deparse.level, ...): numbers of columns of arguments do not match>
+Error in { : task 3 failed - "object 'variable' not found"
+Calls: %dopar% -> <Anonymous>
+Execution halted
